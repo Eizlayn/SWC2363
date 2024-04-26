@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Made In Heaven Theme Park - Events</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+      /* Add your CSS styles here */
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa; /* Match the background color of other pages */
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      header {
+        background-color: #343a40; /* Match the header color of other pages */
+        color: #ffffff; /* Text color for the header */
+        padding: 20px 0;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 28px;
+        color: #ffcc00;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #ffffff; /* Link color for the header */
+      }
+
+      nav ul li a:hover {
+        color: #ffcc00; /* Change color on hover */
+      }
+      body {
+        background-color: #ffcc00;
+      }
+      .slideshow-container {
+        max-width: 100%; /* Ensure slideshow takes full width of the container */
+        overflow: hidden;
+        margin-top: 20px;
+        position: relative;
+        display: flex; /* Use flexbox to center slides */
+        justify-content: center; /* Center the slides horizontally */
+        align-items: center; /* Center the slides vertically */
+        height: 70vh; /* Set a fixed height for the slideshow */
+      }
+      .mySlides {
+        width: auto; /* Set the width to auto to fit the container */
+        height: 100%; /* Ensure the slide takes full height */
+        object-fit: cover; /* Ensure the image covers the entire slide */
+      }
+      footer {
+        background-color: #343a40; /* Match the footer color of other pages */
+        color: #ffffff; /* Text color for the footer */
+        padding: 20px 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Made In Heaven Theme Park - Events</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="Home.php"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="Attractions.html"
+                ><i class="fas fa-map-marker-alt"></i> Attractions</a
+              >
+            </li>
+            <li>
+              <a href="Events.html"
+                ><i class="far fa-calendar-alt"></i> Events</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="slideshow-container">
+      <img class="mySlides" src="raya.jpg" alt="Event 1" />
+      <img class="mySlides" src="concert.jpg" alt="Event 2" />
+      <img class="mySlides" src="light.jpg" alt="Event 3" />
+      <img class="mySlides" src="horror.jpg" alt="Event 4" />
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Made In Heaven Theme Park</p>
+      </div>
+    </footer>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>

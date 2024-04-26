@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attractions - Made In Heaven Theme Park</title>
+    <link rel="stylesheet" href="design.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <h1 id="theme-park-title">Made In Heaven Theme Park</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="Home.php"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="Attractions.html"
+                ><i class="fas fa-map-marker-alt"></i> Attractions</a
+              >
+            </li>
+            <li>
+              <a href="Events.html"
+                ><i class="far fa-calendar-alt"></i> Events</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Attractions Section -->
+    <main>
+      <section class="ride">
+        <h2>Our Main Rides</h2>
+        <div class="ride-item flip-container" id="ride">
+          <div class="flipper">
+            <div class="front">
+              <img src="rollercoaster.jpg" alt="attraction 1" />
+              <h3>Roller Coaster</h3>
+              <p>
+                A high-speed thrill ride with loops, twists, and drops that
+                provides an adrenaline-pumping experience for thrill-seekers.
+              </p>
+              <button onclick="toggleRequirements('ride')">Details</button>
+              <div class="back requirements" id="ride-requirements">
+                <h4>Requirements</h4>
+                <ul>
+                  <li>
+                    Height: Minimum height requirement of 48 inches (122 cm).
+                  </li>
+                  <li>Weight: No weight restrictions.</li>
+                  <li>Age: Recommended for ages 10 and above.</li>
+                  <li>
+                    Health: Guests with heart conditions, back problems, neck
+                    problems, motion sickness, or recent surgeries should avoid
+                    this ride. Pregnant women and guests with medical conditions
+                    that could be aggravated by sudden drops, high speeds, or
+                    strong forces should also refrain from riding.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ride-item flip-container" id="ride2">
+          <div class="flipper">
+            <div class="front">
+              <img src="logflume.jpg" alt="attraction 1" />
+              <h3>Log Flume</h3>
+              <p>
+                A water ride featuring gentle slopes, thrilling drops, and
+                splash zones as riders navigate through winding water channels
+                in hollowed-out logs.
+              </p>
+              <button onclick="toggleRequirements('ride2')">Details</button>
+              <div class="back requirements" id="ride-requirements">
+                <h4>Requirements</h4>
+                <ul>
+                  <li>
+                    Height: Minimum height requirement of 36 inches (91 cm) to
+                    ride with an adult; 42 inches (107 cm) to ride alone.
+                  </li>
+                  <li>Weight: No weight restrictions.</li>
+                  <li>
+                    Age: Suitable for all ages, but children under 7 years old
+                    must be accompanied by a responsible adult.
+                  </li>
+                  <li>
+                    Health: Guests with heart conditions, back problems, or
+                    motion sickness should use caution. Pregnant women and
+                    guests with medical conditions that could be aggravated by
+                    water rides or sudden drops should refrain from riding.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ride-item flip-container" id="ride3">
+          <div class="flipper">
+            <div class="front">
+              <img src="bumpercar.jpg" alt="attraction 1" />
+              <h3>Bumper Cars</h3>
+              <p>
+                A fun-filled attraction where visitors can bump and spin their
+                way through an electrifying arena in colorful, bumper-equipped
+                cars.
+              </p>
+              <button onclick="toggleRequirements('ride3')">Details</button>
+              <div class="back requirements" id="ride-requirements">
+                <h4>Requirements</h4>
+                <ul>
+                  <li>
+                    Height: Minimum height requirement of 42 inches (107 cm) to
+                    ride alone; shorter guests may ride with a responsible
+                    adult.
+                  </li>
+                  <li>Weight: No weight restrictions.</li>
+                  <li>Age: Recommended for ages 6 and above.</li>
+                  <li>
+                    Health: Guests with neck or back problems, heart conditions,
+                    motion sickness, or recent surgeries should use caution when
+                    participating. Pregnant women should avoid this ride.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ride-item flip-container" id="ride4">
+          <div class="flipper">
+            <div class="front">
+              <img src="Drop Tower.jpg" alt="attraction 1" />
+              <h3>Drop Tower</h3>
+              <p>
+                An exhilarating free-fall ride that takes passengers to the top
+                of a towering structure before plunging them down at high speed,
+                creating a thrilling sensation of weightlessness.
+              </p>
+              <button onclick="toggleRequirements('ride4')">Details</button>
+            </div>
+            <div class="back requirements" id="ride-requirements">
+              <h4>Requirements</h4>
+              <ul>
+                <li>
+                  Height: Minimum height requirement of 48 inches (122 cm).
+                </li>
+                <li>Weight: Maximum weight limit of 300 lbs (136 kg).</li>
+                <li>Age: Recommended for ages 12 and above.</li>
+                <li>
+                  Health: Guests with heart conditions, back problems, or fear
+                  of heights should avoid this ride.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="ride-item flip-container" id="ride5">
+          <div class="flipper">
+            <div class="front">
+              <img src="Giant Swing.jpg" alt="attraction 1" />
+              <h3>Giant Swing</h3>
+              <p>
+                A heart-pounding swing ride that propels riders high into the
+                air, swinging them back and forth in a thrilling arc with
+                breathtaking views of the park below.
+              </p>
+              <button onclick="toggleRequirements('ride5')">Details</button>
+            </div>
+            <div class="back requirements" id="ride-requirements">
+              <h4>Requirements</h4>
+              <ul>
+                <li>
+                  Height: Minimum height requirement of 48 inches (122 cm).
+                </li>
+                <li>Weight: Maximum weight limit of 250 lbs (113 kg).</li>
+                <li>Age: Recommended for ages 10 and above.</li>
+                <li>
+                  Health: Guests with heart conditions, back problems, or motion
+                  sickness should use caution.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="ride-item flip-container" id="ride6">
+          <div class="flipper">
+            <div class="front">
+              <img src="spinning.jpg" alt="attraction 1" />
+              <h3>Spinning Coaster</h3>
+              <p>
+                A wild roller coaster experience with cars that spin
+                independently, adding an extra dimension of excitement as riders
+                navigate through twists, turns, and drops.
+              </p>
+              <button onclick="toggleRequirements('ride7')">Details</button>
+            </div>
+            <div class="back requirements" id="ride-requirements">
+              <h4>Requirements</h4>
+              <ul>
+                <li>
+                  Height: Minimum height requirement of 42 inches (107 cm).
+                </li>
+                <li>Weight: Maximum weight limit of 300 lbs (136 kg).</li>
+                <li>Age: Recommended for ages 8 and above.</li>
+                <li>
+                  Health: Guests with motion sickness or back problems should
+                  use caution.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ride">
+        <h2>Our Main Attractions</h2>
+        <div class="ride-item flip-container" id="ride7">
+          <div class="flipper">
+            <div class="front">
+              <img src="haunted.jpg" alt="attraction 1" />
+              <h3>Haunted Mansion</h3>
+              <p>
+                Descend into the eerie Haunted Mansion for a spine-chilling
+                adventure through ghostly halls and mysterious chambers.
+              </p>
+              <button onclick="toggleRequirements('ride7')">Details</button>
+            </div>
+            <div class="back requirements" id="ride-requirements">
+              <h4>Requirements</h4>
+              <ul>
+                <li>Height: No height restrictions.</li>
+                <li>
+                  Age: Recommended for ages 8 and above due to spooky effects.
+                </li>
+                <li>
+                  Health: Guests with heart conditions, claustrophobia, or
+                  sensitivity to flashing lights and loud noises should avoid
+                  this attraction.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="ride-item flip-container" id="ride8">
+          <div class="flipper">
+            <div class="front">
+              <img src="jungle.jpg" alt="attraction 1" />
+              <h3>Jungle Safari</h3>
+              <p>
+                An immersive adventure where visitors can explore lush
+                landscapes, encounter animatronic wildlife, and learn about
+                exotic plants.
+              </p>
+              <button onclick="toggleRequirements('ride8')">Details</button>
+            </div>
+            <div class="back requirements" id="ride-requirements">
+              <h4>Requirements</h4>
+              <ul>
+                <li>Height: No height restrictions.</li>
+                <li>Age: Suitable for all ages.</li>
+                <li>
+                  Health: Guests should be able to walk on uneven terrain and
+                  tolerate mild motion.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="ride-item flip-container" id="ride9">
+          <div class="flipper">
+            <div class="front">
+              <img src="space.jpg" alt="attraction 1" />
+              <h3>Space Odyssey</h3>
+              <p>
+                A futuristic journey through outer space featuring simulated
+                spaceflight, interactive exhibits, and breathtaking views of
+                distant galaxies.
+              </p>
+              <button onclick="toggleRequirements('ride9')">Details</button>
+            </div>
+            <div class="back requirements" id="ride-requirements">
+              <h4>Requirements</h4>
+              <ul>
+                <li>Height: No height restrictions.</li>
+                <li>Age: Recommended for ages 7 and above.</li>
+                <li>
+                  Health: Guests with motion sickness, fear of heights, or
+                  sensitivity to flashing lights should use caution.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="ride-item flip-container" id="ride10">
+          <div class="flipper">
+            <div class="front">
+              <img src="castle.jpg" alt="attraction 1" />
+              <h3>Enchanted Castle</h3>
+              <p>
+                A magical castle experience complete with enchanting gardens,
+                interactive storytelling, and a chance to meet beloved fairy
+                tale characters.
+                <button onclick="toggleRequirements('ride10')">Details</button>
+              </p>
+            </div>
+
+            <div class="back requirements" id="ride-requirements">
+              <h4>Requirements</h4>
+              <ul>
+                <li>Height: No height restrictions.</li>
+                <li>Age: Suitable for all ages.</li>
+                <li>
+                  Health: Guests should be comfortable walking and standing for
+                  extended periods.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="ride-item flip-container" id="ride11">
+          <div class="flipper">
+            <div class="front">
+              <img src="pirate.jpg" alt="attraction 1" />
+              <h3>Pirate Cove</h3>
+              <p>
+                An adventure zone where visitors can embark on pirate-themed
+                quests, explore hidden treasure caves, and witness thrilling
+                pirate shows.
+              </p>
+              <button onclick="toggleRequirements('ride11')">Details</button>
+            </div>
+            <div class="back requirements" id="ride-requirements">
+              <h4>Requirements</h4>
+              <ul>
+                <li>Height: No height restrictions.</li>
+                <li>Age: Suitable for all ages.</li>
+                <li>
+                  Health: Guests should be able to navigate stairs and tolerate
+                  moderate motion.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="ride-item flip-container" id="ride12">
+          <div class="flipper">
+            <div class="front">
+              <img src="dino.jpg" alt="attraction 1" />
+              <h3>Dino Discovery</h3>
+              <p>
+                An educational attraction showcasing lifelike animatronic
+                dinosaurs, interactive fossil digs, and multimedia presentations
+                on prehistoric life.
+              </p>
+              <button onclick="toggleRequirements('ride12')">Details</button>
+            </div>
+            <div class="back requirements" id="ride-requirements">
+              <h4>Requirements</h4>
+              <ul>
+                <li>Height: No height restrictions.</li>
+                <li>Age: Suitable for all ages.</li>
+                <li>
+                  Health: Guests should be comfortable walking and standing for
+                  extended periods.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function toggleRequirements(ride) {
+        var rideItem = document.getElementById(ride);
+        rideItem.classList.toggle("flipped");
+      }
+    </script>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Made In Heaven Theme Park</p>
+      </div>
+    </footer>
+  </body>
+</html>
